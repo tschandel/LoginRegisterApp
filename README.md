@@ -17,7 +17,7 @@
 * Run you project with mvn spring-boot:run and launch from browser with [http://localhost:8080/]
 
 #### Note
-* /api/createUser is only api which will work without login other won't. 
+* /api/createUser is only api which can be accessed without login as it has been permited using in Spring Security. 
 * /login is done using Spring Security (Form Based), and same has been added to Swagger as well. So login can be done from      designed form and swagger both.
 * Already 1 user has been created with username - user1@gmail.com and password - 123 (in script it is written in Bcrypted Form)
     
