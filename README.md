@@ -1,5 +1,4 @@
 ### Installation Setps
-For further reference, please consider the following sections:
 
 #### Pre-Requisites on Local Machine
 * Java 1.8
