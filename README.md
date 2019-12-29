@@ -20,6 +20,6 @@
 * /api/createUser is only api which can be accessed without login as it has been permitted in Spring Security. 
 * /login is done using Spring Security (Form Based), and same has been added to Swagger as well. So login can be done from      designed form and swagger both.
 * Already 1 user has been created with username - user1@gmail.com and password - 123 (in script it is written in Bcrypted Form)
-    
+* In Response Body of /login api, we are getting view code of directed page. As /login has been handled by Spring, and defaultSuccessUrl has been set to /api, thats why we are getting view code in response.
 #### Documentation
 * Once the app comes up you will find the documentation at http://localhost:8080/swagger-ui.html
