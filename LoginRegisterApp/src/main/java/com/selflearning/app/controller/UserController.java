@@ -58,7 +58,7 @@ public class UserController {
 	@GetMapping(value = "/user")
 	@ResponseBody
 	public ResponseEntity<UserDTO> getUser(
-			@RequestParam("loginId") @Min(value = 2, message = "Login Id can't be less than 5 characters") String loginId)
+			@RequestParam("loginId") @Size(min = 2, message = "Login Id can't be less than 5 characters") String loginId)
 			throws UserLoginIdNotFoundException {
 
 		UserDTO userDTO = userService.retrieveUser(loginId);

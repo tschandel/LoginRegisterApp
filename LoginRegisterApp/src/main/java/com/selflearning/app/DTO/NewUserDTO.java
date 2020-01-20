@@ -3,27 +3,24 @@ package com.selflearning.app.DTO;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 public class NewUserDTO {
 
 	@NotEmpty(message = "First Name can't be empty")
-	@Min(5)
-	@Max(30)
+	@Size(min = 5, max = 30, message = "firstName should be between 5 and 30 characters")
 	private String firstName;
 
 	@NotEmpty(message = "Last Name can't be empty")
-	@Min(5)
-	@Max(30)
+	@Size(min = 5, max = 30, message = "lastName should be between 5 and 30 characters")
 	private String lastName;
 
 	@NotEmpty(message = "Login Id can't be empty")
-	@Min(5)
-	@Max(30)
+	@Size(min = 5, max = 30, message = "loginId should be between 5 and 30 characters")
 	private String loginId;
 
 	@NotEmpty(message = "Password can't be empty")
-	@Min(2)
-	@Max(30)
+	@Size(min = 2, max = 30, message = "password should be between 5 and 30 characters")
 	private String password;
 
 	private String place;
