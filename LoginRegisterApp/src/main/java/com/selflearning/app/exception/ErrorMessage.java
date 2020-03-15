@@ -15,7 +15,6 @@ public class ErrorMessage {
 
 	public ErrorMessage(String message, String error) {
 		super();
-		
 		//this.errorObject = errorObject;
 		this.message = message;
 		this.error = error;
