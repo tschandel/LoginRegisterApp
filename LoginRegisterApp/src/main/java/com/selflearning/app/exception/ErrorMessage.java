@@ -19,6 +19,7 @@ public class ErrorMessage {
 		this.message = message;
 		this.error = error;
 		this.timestamp = new Date();
+		
 	}
 
 	public Date getTimestamp() {
